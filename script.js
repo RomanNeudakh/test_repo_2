@@ -14,7 +14,7 @@
 
     try {
         // Initialize the SDK with the extracted id
-        const sdk = await new PipedriveAppExtensionsSDK({ identifier: id }).initialize({ size: { height: 500 } });
+        const sdk = await new PipedriveAppExtensionsSDK().initialize({ size: { height: 500 } });
 
         // Open a custom modal using the SDK
         const { status } = await sdk.execute(PipedriveAppExtensionsSDK.Command.OPEN_MODAL, {
