@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async function() {
+
     // Function to get query parameters
     function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -26,4 +26,3 @@ document.addEventListener('DOMContentLoaded', async function() {
     } catch (error) {
         console.error('Error initializing SDK or opening modal:', error);
     }
-});
